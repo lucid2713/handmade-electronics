@@ -1,29 +1,42 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Handmade Electronics</title>
+    <title>Handmade Electronics for Artist Play</title>
     <style media="screen">
     @import url('https://fonts.googleapis.com/css?family=Amatic+SC|Fredericka+the+Great');
     body{
       background-color: MediumSpringGreen;
+      justify-content: center;
+      align-items: center;
+      display: flex;
+      flex-direction: column;
 
     }
-    h1{
+    header h1{
       text-align: center;
       font-family: 'Amatic SC', cursive;
       margin-left: 1rem;
       margin-top: 2rem;
       color: DarkCyan;
     }
+    header h1 a{
+      text-decoration: none;
+      color: DarkCyan;
+    }
+    section{
+
+
+    }
     .items{
       font-family: 'Fredericka the Great', cursive;
       text-align: center;
       font-size: 2rem;
       margin: 1rem;
+      width: 100%;
 
     }
     .items a{
-      text-decoration: none;
+      /*text-decoration: none;*/
       color: Magenta;
     }
     .items a:hover{
@@ -31,24 +44,25 @@
     }
     img{
       width:500px;
-      float: left;
+      /*float: left;*/
       /*margin-right: 20px;*/
       margin-bottom: 20px
     }
-    .zineimages{
+    /*.zineimages{
       margin-left: 2rem;
-    }
-    #horizontal{
+    }*/
+    /*#horizontal{
       height: 500px;
       width: auto;
-    }
+    }*/
     #zinegif{
-      margin: 10px;
-      width: 480px;
+      text-align: center;
+      width: 600px;
+      margin-bottom: 20px
     }
     footer{
-      position: relative;
-      clear: both;
+      /*position: relative;
+      clear: both;*/
       left: 0;
       bottom: 0;
       width: 100%;
@@ -56,7 +70,6 @@
       text-align: center;
       font-family: 'Amatic SC', cursive;
       color: DarkCyan;
-      /*margin-top: 3rem;*/
       padding-top: 20px;
       padding-bottom: : 10px;
     }
@@ -66,20 +79,16 @@
     </style>
   </head>
   <body>
-    <h1>Handmade Electronics</h1>
+    <header>
+    <h1><a href="#">Handmade Electronics for Artistc Play</a></h1>
+    </header>
+    <section>
+    <div class="items"><a href="http://lucid2713.github.io/handmade-electronics/items/oscillator/">Analog Synthesizer - oscillator</a></div>
+    <img id="zinegif" src="items/img/zine.gif" alt="zine gif">
+    <br/><br/>
+    <div class="items"><a href="http://lucid2713.github.io/handmade-electronics/items/tips-and-reference/">Useful Tips and Reference(to be updated)</a></div>
 
-    <div class="items"><a href="#">analog synthesizer - oscillator</a></div>
-    <div class="zineimages">
-    <img class="cover" src="zineweb01.png" alt="zine front cover">
-    <img src="zineweb02.png" alt="zine page1">
-    <img src="zineweb03.png" alt="zine page2">
-    <img src="zineweb04.png" alt="zine page3">
-    <img id="horizontal" src="zineweb05.png" alt="zine page4">
-    <img src="zineweb06.png" alt="zine page5">
-    <img src="zineweb07.png" alt="zine page6">
-    <img class="cover" src="zineweb08.png" alt="zine back cover">
-    <img id="zinegif" src="zine.gif" alt="zine gif">
-    </div>
+    </section>
 
     <footer>
       made by <a href="http://mina-vitamina.net" target="_blank">vitamina</a>
