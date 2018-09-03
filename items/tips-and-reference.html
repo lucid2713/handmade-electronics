@@ -1,0 +1,467 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Useful Tips and Reference</title>
+  <meta charset="utf-8">
+  <style media="screen">
+    @import url('https://fonts.googleapis.com/css?family=Amatic+SC|Josefin+Slab:400,600,600i,700|Fredericka+the+Great');
+    body {
+      background-color: MediumSpringGreen;
+      /*display: flex;*/
+      align-items: center;
+      justify-content: center;
+      font-family: 'Josefin Slab', serif;
+    }
+
+    .container {
+      display: flex;
+      width: 100%;
+      height: 100%;
+      flex-direction: column;
+    }
+
+    header {
+      text-align: center;
+      border-bottom: 1px dashed darkcyan;
+    }
+
+    header h1 {
+      font-family: 'Amatic SC', cursive;
+      margin-top: 2rem;
+      color: DarkCyan;
+    }
+
+    header h1 a {
+      text-decoration: none;
+      color: DarkCyan;
+    }
+
+    header .intro {
+      padding-bottom: 15px;
+      font-weight: 600;
+      font-size: 1.2rem;
+      color: Darkcyan;
+    }
+
+    .content {
+      display: flex;
+      flex-direction: row;
+      /*align-content: stretch;*/
+      align-content: flex-start;
+      flex-wrap: wrap;
+      padding: 10px;
+      /*height: 700px;*/
+      margin: 10px;
+    }
+
+    /*.content nav{
+    border-right: 1px solid gray;
+  }
+  .content aside{
+    border-left: 1px solid gray;
+  }*/
+
+    /*nav, aside{
+    flex-basis: 150px;
+  }*/
+
+    /*nav{
+    flex-basis: 150px;
+    flex-shrink: 0;
+  }*/
+
+    /*main{
+    padding: 10px;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }*/
+
+    .item {
+      padding: 15px;
+      margin: 5px;
+      background-color: lightgoldenrodyellow;
+      width: 300px;
+      flex-grow: 1;
+    }
+
+    .item h2 {
+      font-family: 'Fredericka the Great', cursive;
+      color: Magenta;
+    }
+
+    .item:nth-child(even) h2 {
+      color: MediumSlateBlue;
+    }
+
+    /*.item:nth-child(3n+0){
+    background-color: Mediumslateblue;
+  }*/
+
+    /*.item:nth-child(3n+1){
+    background-color: hotpink;
+  }*/
+
+    .item:nth-child(1) {
+      flex-basis: 300px;
+      /*flex-shrink: 0;*/
+      height: 480px;
+    }
+
+    .item:nth-child(2) {
+      height: 300px;
+    }
+
+    .item:nth-child(3) {
+      /*flex-grow: 2;*/
+      flex-basis: 300px;
+      /*flex-shrink: 0;*/
+      height: 480px;
+    }
+
+    .item:nth-child(4) {
+      flex-basis: 250px;
+      height: 350px;
+    }
+
+    .item:nth-child(5) {
+      flex-basis: 400px;
+    }
+
+    .item:nth-child(6) {
+      flex-basis: 400px;
+    }
+
+    .item:nth-child(7) {
+      flex-basis: 350px;
+    }
+
+    .item:nth-child(8) {
+      flex-basis: 400px;
+    }
+
+    .item:nth-child(9) {
+      flex-basis: 400px;
+    }
+
+    .item:nth-child(10) {
+      flex-basis: 250px;
+      height: 420px;
+    }
+
+    .item:nth-child(11) {
+      flex-basis: 250px;
+      height: 420px;
+    }
+
+    .item:nth-child(12) {
+      /*flex-basis: 600px;*/
+      width: 100%;
+    }
+
+    .item a {
+      color: magenta;
+    }
+
+    .item:nth-child(even) a {
+      color: MediumSlateBlue;
+    }
+
+    .item:nth-child(even) .caption a {
+      color: Darkcyan;
+    }
+
+    .text {
+      margin: 2px;
+    }
+
+    .images {
+      text-align: center;
+    }
+
+    .caption {
+      margin: 5px;
+      text-align: center;
+      font-style: italic;
+      font-size: xx-small;
+      color: Darkcyan;
+    }
+
+    .caption a {
+      color: Darkcyan;
+    }
+
+    footer {
+      position: relative;
+      clear: both;
+      left: 0;
+      bottom: 0;
+      width: 100%;
+      padding-top: 20px;
+      padding-bottom: : 10px;
+      text-align: center;
+      font-family: 'Amatic SC', cursive;
+      color: DarkCyan;
+      margin: 1rem;
+    }
+
+    footer a {
+      color: DarkCyan;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <header>
+      <h1><a href="http://lucid2713.github.io/handmade-electronics/">Handmade Electronic Art</a></h1>
+      <div class="intro">Useful Tips and Reference</div>
+    </header>
+    <section class="content">
+      <!-- <nav>
+        <ul>
+          <li>nav1</li>
+          <li>nav2</li>
+          <li>nav3</li>
+        </ul>
+      </nav> -->
+      <!-- <main> -->
+      <div class="item">
+        <h2>Schematic symbols</h2>
+        <div class="text">
+          There are 2 different styles: US and European.<br/> Check out this <a href="https://www.build-electronic-circuits.com/schematic-symbols/" target="_blank">link</a>, which gives an overview of the most used schematic symbols.<br/> For further
+          information, I would recommend image searching with keywords of which you would like to know, or just ‘schematic symbols’.
+        </div>
+        <br/>
+        <div class="images">
+          <a title="By Original:
+
+Jleedev
+
+Vector:
+
+DnetSvg at English Wikipedia [GFDL (http://www.gnu.org/copyleft/fdl.html) or CC-BY-SA-3.0 (http://creativecommons.org/licenses/by-sa/3.0/)], via Wikimedia Commons" href="https://commons.wikimedia.org/wiki/File:Circuit_elements.svg" target="_blank"><img width="256" alt="Circuit elements" src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/cb/Circuit_elements.svg/256px-Circuit_elements.svg.png"></a>
+        </div>
+        <div class="caption">
+          By Original:JleedevVector:DnetSvg at English Wikipedia [<a href="http://www.gnu.org/copyleft/fdl.html">GFDL</a> or <a href="http://creativecommons.org/licenses/by-sa/3.0/">CC-BY-SA-3.0</a>], <a href="https://commons.wikimedia.org/wiki/File:Circuit_elements.svg">via Wikimedia Commons</a>
+        </div>
+      </div>
+
+      <div class="item">
+        <h2>Image search</h2>
+        <div class="text">
+          If you get in stuck in the middle of building circuits, soldering or whatsoever, don’t hesitate to search for information!<br/> Often it helps me a lot to use <strong>image search</strong> on web search engine.<br/> From schematics and electronic
+          parts to the way to build and connect circuits, just put the keywords and check the result on image tab.<br/> In this way, you would get it more fast and intuitively.
+        </div>
+      </div>
+
+      <div class="item">
+        <h2>Chip</h2>
+        <div class="text">
+          When you work on a chip to make an analog synthesizer, it’s important to check the schematic of the chip and be acquainted with pinouts. Especially if the power connection goes wrong like if the voltage and ground are connected in reverse, the chip will
+          be burnt and dead immediately.<br/> So first, be careful not to confuse connection + with -, and then while connecting pinouts, just touch the chip with your finger and see if it gets hot. If your chip got burnt, it’s hard to reuse
+          or bring back it’s life. <br/> And when you buy chips, it would be wise to prepare at least 2 or more chips, just in case!<br/><br/>
+          <div class="images">
+            <a title="By AndyDK at en.wikiversity
+            (Original text : N/A) [CC BY-SA 2.5
+             (https://creativecommons.org/licenses/by-sa/2.5
+            )], from Wikimedia Commons" href="https://commons.wikimedia.org/wiki/File:Schematics_voltampopamp.jpg" target="_blank"><img width="64" alt="Schematics voltampopamp" src="https://upload.wikimedia.org/wikipedia/commons/9/9b/Schematics_voltampopamp.jpg"></a>
+          </div>
+          <div class="caption">
+            By AndyDK at en.wikiversity(Original text : N/A) [<a href="https://creativecommons.org/licenses/by-sa/2.5">CC BY-SA 2.5 </a>], <a href="https://commons.wikimedia.org/wiki/File:Schematics_voltampopamp.jpg">from Wikimedia Commons</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="item">
+        <h2>Resistor</h2>
+        <div class="text">
+          How to know the value of resistors? <br/>There is a way to calculate the value with the colors that resistors have. You can either calculate it by yourself or using calculators on the web. <br/> Check this <a href="http://www.csgnetwork.com/resistcolcalc.html"
+            target="_blank">link</a> if you would like to look into it. <br/><br/> Also you can do image search by tapping in like '10k ohm resistor’ when you just want to see what colors certain resistors have.
+        </div>
+      </div>
+
+      <div class="item">
+        <h2>Audio jack</h2>
+        <div class="text">
+         I've struggled a lot with audio jack.<br/>
+         Usually female audio jack would be needed for anaolog synth making, but according to what kinds of audio cable used with speaker, you have to consider which audio jack to use.<br/><br/>
+         There are 2 kinds of female audio jack, one is 3.5mm and the other is 6.35mm.<br/>
+         So first check your speaker's(or headphone's) cable, and get the jack which matches with it.<br/><br/>
+            <div class="images">
+            <img src="https://cdn.sparkfun.com//assets/parts/5/9/2/3/12639-01.jpg" alt="3.5mm female audio jack" width="128">
+            <img src="https://cdn.sparkfun.com//assets/parts/1/5/8/2/Audio-3.5mm.jpg" alt="3.5mm female audio jack" width="128">
+          </div>
+          <div class="caption">
+            By sparkfun '<a href="https://www.sparkfun.com/products/12639">Audio Jack - 3.5mm TRRS (SMD)</a>' and '<a href="https://www.sparkfun.com/products/8032">Audio Jack 3.5mm</a>'
+          </div>
+          <br/>
+          <div class="images">
+            <a title="By ARitchie10 [CC BY-SA 3.0
+             (https://creativecommons.org/licenses/by-sa/3.0
+            )], from Wikimedia Commons" href="https://commons.wikimedia.org/wiki/File:Audio_Jacks.jpg" target="_blank"><img width="256" alt="Audio Jacks" src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/dc/Audio_Jacks.jpg/256px-Audio_Jacks.jpg"></a>
+          </div>
+          <div class="caption">
+            By ARitchie10 [<a href="https://creativecommons.org/licenses/by-sa/3.0">CC BY-SA 3.0 </a>], <a href="https://commons.wikimedia.org/wiki/File:Audio_Jacks.jpg">from Wikimedia Commons</a>
+          </div>
+          <br/>
+           But there are variety of shapes both 3.5mm and 6.35mm cables have. And every product has different numbers of legs(sleeve and tips).<br/>
+           This made me struggled! Because we need to figure out which one is sleeve(to the ground) and which tip should go to audio signal.<br/>
+           The best way is, ask the way to connect audio jack to the staff at the electronic shop if you buy it offline.<br/>
+           But if you get it online shop and don't know how to connect, one possible way would be to do <a href="https://www.google.com/search?biw=1680&bih=456&tbm=isch&sa=1&ei=rZSNW4y2Ho-00gW134ywAQ&q=female+audio+jack+wiring&oq=female+audio+jack+wiring&gs_l=img.12...0.0.0.31405.0.0.0.0.0.0.0.0..0.0....0...1c..64.img..0.0.0....0.pv4HsZ0sb-Y" target="_blank">image searching</a> like as '6.35mm female audio jack wiring'. If you are lucky, you can find the image of the same product you have with description of signal connection.<br/><br/>
+           From my experience, normally the outstanding or longer leg would be the sleeve(gnd) for both 3.5mm and 6.35mm jacks. Nevertheless, check once more!
+          </div>
+      </div>
+
+      <div class="item">
+        <h2>Battery</h2>
+        <div class="text">
+          While working on circuit, you need to supply power. In this case you can use either battery or power adapter. For making analog synthesizer, in my experience, mostly 9v power would be needed.<br/> So if you are using 9v battery(the cuboid shape one),
+          you will need a <a href="https://commons.wikimedia.org/wiki/File:9_volt_Battery_Snap.jpg" target="_blank">battery connector</a> to hook it up on your breadboard or PCB(printed circuit board).<br/><br/>
+          <div class="images">
+            <img src="img/9v-battery.png" alt="9v battery connection" width="256">
+          </div>
+          <br/> But you can use the 9v dc adapter as well. For this, you should cut out the plug, and strip a bit of the skin of wires. Sometimes there are 2 wires enclosed seperately in the plastic skin, or 2-covered-wires are attached together. It depends
+          on every adapter. Anyways, one of them is voltage(+), the other is ground(-). If you are confused to figure out which is which, I would recommend image searching! Or you can ask electricity expert or smart person around you as well.
+          <br/><br/> When you try peeling off the skin of wires, the <a href="https://commons.wikimedia.org/wiki/File:Ideal_Reflex_wire_stripper,_open.jpg" target="_blank">wire stripper</a> will be helpful. (Sissors or cutter can be alternative, but not super handy!)<br/> After finished all the process, hook the voltage wire to + and the ground to - on your
+          circuit. <br/><br/>
+          <div class="images">
+            <img src="img/9v-adapter.png" alt="DC adapter connection" width="256">
+          </div>
+          <br/> It might be helpful to twist a bit the bare (a bundle of)wires with your hand in order to easily connect them to the board.
+          <br/>
+        </div>
+      </div>
+
+      <div class="item">
+        <h2>Capacitor</h2>
+        <div class="text">
+          <strong>Ceramic capacitor</strong> has no polarity. Normally they are small - less than 1uF, and have yellowish colored body. As they’re not polarized, you don’t have to consider the direction to put when connecting their legs on your circuit.<br/>
+          Usually numbers marked on their heads don’t mean directly the value of capacitance of ceramic capacitors. So if you are not sure <a href="https://learn.sparkfun.com/tutorials/capacitor-kit-identification-guide" target="_blank">what value it has</a>, please check it by searching on the internet or your reference.<br/><br/>
+          <div class="images">
+            <a title="By oomlout (22 PF Capacitor - CAPA-22PF) [CC BY-SA 2.0
+             (https://creativecommons.org/licenses/by-sa/2.0
+            )], via Wikimedia Commons" href="https://commons.wikimedia.org/wiki/File:22_pF_Capacitor.jpg" target="_blank"><img width="256" alt="22 pF Capacitor" src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/07/22_pF_Capacitor.jpg/256px-22_pF_Capacitor.jpg"></a>
+          </div>
+          <div class="caption">
+            By oomlout (22 PF Capacitor - CAPA-22PF) [<a href="https://creativecommons.org/licenses/by-sa/2.0">CC BY-SA 2.0 </a>], <a href="https://commons.wikimedia.org/wiki/File:22_pF_Capacitor.jpg">via Wikimedia Commons</a>
+          </div>
+          <br/>
+          <strong>Electrolytic capacitor</strong> has polarity. They normally have cylinder shape heads with two legs in different length - one is longer than the other. The shorter leg is negative and longer one is positive.<br/> Electrolytic capacitors
+          have bigger capacitance than ceramic. And unlike ceramic, ‘Farad’(uF) value is marked on the head of electrolytic capacitors.<br/><br/>
+          <div class="images">
+            <a title="By Markome [CC BY-SA 3.0
+             (https://creativecommons.org/licenses/by-sa/3.0
+            )], from Wikimedia Commons" href="https://commons.wikimedia.org/wiki/File:Electrolytic_capacitor_pressure_release_valve_blown.jpg" target="_blank"><img width="256" alt="Electrolytic capacitor pressure release valve blown" src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/6d/Electrolytic_capacitor_pressure_release_valve_blown.jpg/256px-Electrolytic_capacitor_pressure_release_valve_blown.jpg"></a>
+          </div>
+          <div class="caption">
+            By Markome [<a href="https://creativecommons.org/licenses/by-sa/3.0">CC BY-SA 3.0 </a>], <a href="https://commons.wikimedia.org/wiki/File:Electrolytic_capacitor_pressure_release_valve_blown.jpg">from Wikimedia Commons</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="item">
+        <h2>Connecting diode or LED</h2>
+        <div class="text">
+          <strong>Diode</strong> is a semiconductor element which makes current flow one direction, and not in reverse.<br/><br/>
+          <div class="images">
+            <a title="By Erik Streb [GFDL (http://www.gnu.org/copyleft/fdl.html) or CC BY-SA 3.0
+             (https://creativecommons.org/licenses/by-sa/3.0
+            )], from Wikimedia Commons" href="https://commons.wikimedia.org/wiki/File:Diode_pinout_en_fr.svg" target="_blank"><img width="256" alt="Diode pinout en fr" src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/83/Diode_pinout_en_fr.svg/256px-Diode_pinout_en_fr.svg.png"></a>
+          </div>
+          <div class="caption">
+            By Erik Streb [<a href="http://www.gnu.org/copyleft/fdl.html">GFDL</a> or <a href="https://creativecommons.org/licenses/by-sa/3.0">CC BY-SA 3.0 </a>], <a href="https://commons.wikimedia.org/wiki/File:Diode_pinout_en_fr.svg">from Wikimedia Commons</a>
+          </div>
+          <br/> When you see the symbol of diode above, the current flows to the direction of the arrow. So you should make + to ‘Anode’ and - to ‘Cathode’, as electricity flows + to -.<br/> Usually diode has a line on its cathode(-) side like as you
+          see on the image above.<br/><br/>
+
+          <strong>LED</strong>(light emitting diode) has also polarity. As its name implies, it is a diode as well. <br/> LED has two legs, one is longer than the other. The longer one should be connected to positive(+), and the shorter one goes to negative(-).<br/>          The symbol basically looks same as diode but has two arrows facing outward. <br/><br/>
+          <div class="images">
+            <img src="img/diode_and_led.png" alt="diode and led simbols" width="256">
+          </div>
+          <br/> When you use diode or LED on your circuit, <i>make sure to put a resistor together</i> in order to <a href="http://led.linear1.org/why-do-i-need-a-resistor-with-an-led/" target="_blank">limit the current</a> in the diode. Without resistor,
+          it will be burnt.<br/> To know what resistor to use, check out this <a href="https://www.instructables.com/id/Choosing-The-Resistor-To-Use-With-LEDs/" target="_blank">link</a>. (for precise calculation)<br/><br/>
+          <strong>For simple way:</strong><br/> We usually use 9v battery for making analog oscillator, and you might have 1k, 10k, 47k, 100k, and 1M resistors if you follow my zine <a href="http://lucid2713.github.io/handmade-electronics/items/oscillator.html"
+            target="_blank">‘Analog Synthesizer - oscillator’</a>. So you can just start with 1k ohm resistor together with your LED. The more bigger the value of resistor, the less brighter the light of LED.
+        </div>
+      </div>
+
+      <div class="item">
+        <h2>Photoresistor</h2>
+        <div class="text">
+          ‘Photoresistor' or ‘photocell' or 'light dependent resistor(LDR)' is a resistor of which the value of resistance being changed by the light intensity. When it’s dark, the resistance becomes high but when photoresistors are exposed to light, the resistance
+          decreases. <br/> Both side of the disc can be affected by the light as it is translucent, but the front side which has curvy patten is more sensitive. <br/><br/>
+          <div class="images">
+            <a title="By Arnau 944 [CC BY-SA 4.0
+       (https://creativecommons.org/licenses/by-sa/4.0
+      )], from Wikimedia Commons" href="https://commons.wikimedia.org/wiki/File:LDR-gs-2012.jpg" target="_blank"><img width="128" alt="LDR-gs-2012" src="https://upload.wikimedia.org/wikipedia/commons/d/d3/LDR-gs-2012.jpg"></a>
+          </div>
+          <div class="caption">
+            By Arnau 944 [<a href="https://creativecommons.org/licenses/by-sa/4.0">CC BY-SA 4.0 </a>], <a href="https://commons.wikimedia.org/wiki/File:LDR-gs-2012.jpg">from Wikimedia Commons</a>
+          </div>
+          <br/> If you want to use the resistance of photoresistor from maximum to minimum so that you can control various range of frequency, there are some tips.<br/> For example, put something dark behind the photocell or work completely in dark environment
+          to block additional light. Then use flashlight towards photoresistors to control the illuminance. <br/> Or one common way is, to make a black little tube to cover the other side of the photoresistor’s disc. <br/>
+          <br/>
+          <div class="images">
+            <img src="img/black-tube-ldr.png" alt="ldr covered with black tube" width="256">
+          </div>
+          <br/><br/> The picture below is a part of my 'bleep bag’, one of my e-waste instrument.<br/> I put photoresistors inside the paper cups painted with black inside. So the cups block any light coming from behind. <br/><br/>
+          <div class="images">
+            <img src="img/ldr-cups.png" alt="ldr-cups" width="256">
+          </div>
+        </div>
+      </div>
+
+      <div class="item">
+        <h2>Alligator clips</h2>
+      <div class="text">
+        When you work on breadboard before really transplant complete circuit on the PCB, usually you would not need to solder to connect wires, because you can just use jumper wires.<br/>
+        However in case of connecting audio jack, it seems like we cannot help but do soldering it with wires… But, luckily we can use <a href="https://commons.wikimedia.org/wiki/File:Cocodrile_clips.jpg" target="_blank">alligator clips</a> instead of (annoying) soldering!<br/>
+        When I tryout something, I like using alligator clips in order to connect stuffs. But connected with alligator clips, the signals might be a bit unstable.
+      </div>
+      </div>
+
+      <!-- <div class="item">
+        <h2>Potentiometer</h2>
+        <div class="text"></div>
+      </div> -->
+
+      <!-- <div class="item">
+        <h2>Soldering</h2>
+        <div class="text">
+        </div>
+        </div> -->
+
+      <div class="item">
+        <h2>Take pictures for documentation</h2>
+        <div class="text">
+          For those who are not familiar with circuit and even don’t have super great powerful memory, I always recommend to take pictures of your working process.<br/>
+          As it would look very messy when the circuit on the breadboard covered with wires, take pictures with different angles. Also it's good to shoot video to get sounds you made.<br/>
+          The photos really help when you build it later again or when you transplant the complete circuit on to the pcb(printed circuit board) for soldering!
+      </div>
+      </div>
+
+      <div class="item">
+        <h2>References for Analog Oscillator</h2>
+        <ul>
+          <li><a href="https://www.nicolascollins.com/read.htm" target="_blank">Handmade Electronic Music by Nicolas Collins</a> <br/>I refer a lot this book for experimenting with circuits. It has very detailed explanations and kind and humoruos guideline for beginners.</li>
+           <br/>
+          <li><a href="https://www.bastl-instruments.com/instruments/omsynth/omsynthvideo1/" target="_blank">Tutorial for DIY synth bulding(oscillator) by Bastl Instruments</a> </li>
+           <br/>
+          <li><a href="https://hackaday.com/2015/02/04/logic-noise-sweet-sweet-oscillator-sounds/" target="_blank">Tutorial for oscillator by Hackaday.com</a> </li>
+          <br/>
+          <li><a href="http://avant.org/project/skating-the-circuits/" target="_blank">Skating the Circuits by Taeyoon Choi</a> <br/>Theoretical reference. Friendly illustrating how the circuits and electricity work by the analogy of skateboarding.</li>
+        </ul>
+      </div>
+      <!-- </main> -->
+      <!-- <aside>
+        ad
+      </aside> -->
+    </section>
+    <footer>
+      made by <a href="http://mina-vitamina.net" target="_blank">vitamina</a>
+    </footer>
+  </div>
+</body>
+
+</html>
